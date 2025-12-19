@@ -1,0 +1,15 @@
+# Ignore the virtual environment
+.venv/
+venv/
+env/
+
+# Ignore python cache files
+__pycache__/
+*.pyc
+
+# Ignore heavy experiment data and videos
+data/
+*.mp4
+
+# Ignore IDE settings (VS Code)
+.vscode/
