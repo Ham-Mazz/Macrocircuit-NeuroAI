@@ -1,6 +1,6 @@
 Macrocircuit NeuroAI: Biological vs. Artificial Control
 
-🧬 Project Overview
+Project Overview
 
 This project investigates the impact of Neural Circuit Architectural Priors (NCAP) on the learning and generalization capabilities of reinforcement learning agents (read more: https://arxiv.org/abs/2201.05242).
 
@@ -20,28 +20,12 @@ This represents the "blank slate" approach common in Deep Learning, which must l
 
 The Goal: To determine if biological constraints—specifically sparse coding and pre-defined oscillatory structures—lead to faster learning, better energy efficiency, and more robust swimming behaviors compared to standard "black box" networks.
 
-🎥 Results
-
-(Drag and drop your video_checkpoint_xxxxx.mp4 file here to display a preview)
-
-🛠️ Installation
+Installation
 
 Clone the repository:
 
 git clone [https://github.com/YOUR-USERNAME/Macrocircuit-NeuroAI.git](https://github.com/YOUR-USERNAME/Macrocircuit-NeuroAI.git)
 cd Macrocircuit-NeuroAI
-
-
-Set up the environment:
-It is recommended to use a virtual environment to manage dependencies.
-
-python -m venv .venv
-
-# Activate on Windows:
-.venv\Scripts\activate
-
-# Activate on Mac/Linux:
-source .venv/bin/activate
 
 
 Install Dependencies:
@@ -56,7 +40,7 @@ git clone [https://github.com/neuromatch/tonic.git](https://github.com/neuromatc
 pip install -e tonic
 
 
-🚀 Usage
+Usage
 
 1. Training the Agents
 
@@ -82,7 +66,7 @@ Arguments:
 
 --checkpoint: Use last to load the final model, or specific step number (e.g., 100000).
 
-📂 Project Structure
+Project Structure
 
 model.py: Contains the NCAP architecture definitions, including the SwimmerModule (Bio-Brain) and SwimmerActor.
 
@@ -92,7 +76,7 @@ visualize.py: A robust tool for loading trained models, rendering the simulation
 
 requirements.txt: List of dependencies.
 
-⚠️ Troubleshooting
+Troubleshooting
 
 Windows "Bazel/Labmaze" Error: If pip install fails looking for labmaze, ensure you are not installing dm_lab. This project only requires dm_control and mujoco.
 
